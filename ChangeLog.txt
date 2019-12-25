@@ -1,0 +1,12 @@
+ICS Android VERSION
+版本控制文件格式統一
+
+Ver 1.0.0
+
+
+Author	:		JZ
+Date	:		2019-12/25(三)
+1
+
+
+
