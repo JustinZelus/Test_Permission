@@ -16,9 +16,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        String[] permissions = {Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE};
+        String[] permissions = { Manifest.permission.CAMERA,
+                                 Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                                 Manifest.permission.ACCESS_NETWORK_STATE};
 
-        Permissions.check(this, permissions, null, null, new PermissionHandler() {
+        Permissions.check(this, permissions, "需要這些服務才能完整", null, new PermissionHandler() {
             @Override
             public void onGranted() {
                 Toast.makeText(MainActivity.this, "Camera+Storage granted.", Toast.LENGTH_LONG).show();
